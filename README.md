@@ -131,6 +131,10 @@ WHERE CAST(Vinculados AS DECIMAL) > 500 AND CAST(Evadidos AS DECIMAL) < 100
 AND TO_TIMESTAMP(COALESCE(CAST(Ano AS STRING), '2009') || '-01-01 00:00:00', 'yyyy-MM-dd HH:mm:ss') > TO_TIMESTAMP('2012-01-01 00:00:00', 'yyyy-MM-dd HH:mm:ss') 
 AND LOWER(NomeCurso) != 'administração' LIMIT 10
 ```
+⬇️ Em linha - FUNCIONA
+```SQL
+SELECT SUM(CAST(Vinculados AS DECIMAL)), AVG(CAST(Evadidos AS DECIMAL)) FROM s3object WHERE CAST(Vinculados AS DECIMAL) > 500 AND CAST(Evadidos AS DECIMAL) < 100 AND TO_TIMESTAMP(COALESCE(CAST(Ano AS STRING), '2009') || '-01-01 00:00:00', 'yyyy-MM-dd HH:mm:ss') > TO_TIMESTAMP('2012-01-01 00:00:00', 'yyyy-MM-dd HH:mm:ss') AND LOWER(NomeCurso) != 'administração' LIMIT 10
+```
 
 ### Considerações finais
 
