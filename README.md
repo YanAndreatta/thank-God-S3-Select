@@ -90,8 +90,6 @@ Por algum motivo, você consegue fazer consultas com mais de uma **Função Agre
 ![God NO](./images/the-office-steve-carell.gif)
 
 Mesmo você sabendo que o problema não está no `nome da coluna` ou qualquer outra coisa em relação ao seu arquivo.
-**Eu acho que tenho uma ideia do porquê isso acontece, mas a preguiça foi maior de ir afundo**
-[Solicitações usando intervalos de verificação](https://docs.aws.amazon.com/pt_br/AmazonS3/latest/userguide/selecting-content-from-objects.html)
 
 ### O que faço se não consigo usar as funções no SELECT command?
 
